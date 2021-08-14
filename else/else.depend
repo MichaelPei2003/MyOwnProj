@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1628945023 source:c:\users\zzh\documents\github\myownproj\else\main.c
+	<stdio.h>
+	<stdlib.h>
+
