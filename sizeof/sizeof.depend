@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1629000591 source:c:\users\zzh\documents\github\myownproj\sizeof\main.c
+	<stdio.h>
+	<stdlib.h>
+
