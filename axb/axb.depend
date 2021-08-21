@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1629533628 source:c:\users\zzh\documents\github\myownproj\axb\main.c
+	<stdio.h>
+	<stdlib.h>
+
