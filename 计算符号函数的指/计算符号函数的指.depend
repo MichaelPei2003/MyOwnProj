@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1630077115 source:c:\users\zzh\documents\github\myownproj\计算符号函数的指\main.c
+	<stdio.h>
+	<stdlib.h>
+

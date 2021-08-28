@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include   int main() {     int t;     if (scanf("%d", &t) == 1) {         printf("%d", t);     } else {         printf("Failed to read integer.\n");     }     return 0; }
 int main()
 {
     int a;
