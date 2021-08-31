@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1630156071 source:c:\users\zzh\documents\github\myownproj\摄氏华氏温度转换表\main.c
+	<stdio.h>
+	<stdlib.h>
+

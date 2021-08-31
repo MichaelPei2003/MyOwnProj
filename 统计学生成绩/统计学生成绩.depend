@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1630159344 source:c:\users\zzh\documents\github\myownproj\统计学生成绩\main.c
+	<stdio.h>
+	<stdlib.h>
+
