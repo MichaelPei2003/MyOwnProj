@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1630932133 source:c:\users\nobody\documents\github\myownproj\test3\main.c
+	<stdio.h>
+	<math.h>
+
