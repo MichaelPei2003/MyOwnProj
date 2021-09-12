@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1631186530 source:c:\users\nobody\documents\github\myownproj\多项式求值\main.c
+	<stdio.h>
+	<math.h>
+

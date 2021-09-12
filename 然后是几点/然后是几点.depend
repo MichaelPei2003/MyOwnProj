@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1631061911 source:c:\users\nobody\documents\github\myownproj\然后是几点\main.c
+	<stdio.h>
+	<stdlib.h>
+
