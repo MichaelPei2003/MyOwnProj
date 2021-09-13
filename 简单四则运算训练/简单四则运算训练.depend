@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1631505889 source:c:\users\zzh\documents\github\myownproj\简单四则运算训练\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
