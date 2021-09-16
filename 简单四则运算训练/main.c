@@ -155,18 +155,19 @@ void chufa()
         }
         for(;;)
         {
-            printf("%d/%d=",x,y);
-            scanf("%d",&z);
-            if(z==(x/y))
+            z=x*y;
+            printf("%d/%d=",z,y);
+            scanf("%d",&x);
+            if(x==(z/y))
             {
                 i++;
                 printf("恭喜你连续答对了第%d题\n",i);
                 break;
             }
-            else if(z!=888){i=0;continue;}
+            else if(x!=888){i=0;continue;}
             else{break;}
         }
-        if(z==888){printf("返回主菜单\n");break;}
+        if(x==888){printf("返回主菜单\n");break;}
     }
     menu();
 }
@@ -263,19 +264,20 @@ void hunhe()
             }
             for(;;)
             {
-                printf("%d/%d=",x,y);
-                scanf("%d",&z);
-                if(z==(x/y))
+                z=x*y;
+                printf("%d/%d=",z,y);
+                scanf("%d",&x);
+                if(x==(z/y))
                 {
                     i++;
                     printf("恭喜你连续答对了第%d题\n",i);
                     break;
                 }
-                else if(z!=888){i=0;continue;}
+                else if(x!=888){i=0;continue;}
                 else{break;}
             }
         }
-        if(z==888){printf("返回主菜单");break;}
+        if(x==888){printf("返回主菜单");break;}
     }
     menu();
 }
