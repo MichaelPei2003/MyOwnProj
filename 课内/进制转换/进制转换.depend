@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1632443891 source:c:\users\19832\documents\github\myownproj\课内\进制转换\main.cpp
+	<iostream>
+	<cstdio>
+
