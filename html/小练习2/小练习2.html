@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小练习2</title>
+    <style>
+        .box0{
+            width:60%;
+            height:550px;
+            display:flex;
+            background-color:burlywood;
+            border-radius: 10px 10px 10px 10px;
+            flex-direction: column;
+            margin: auto;
+            z-index: 0;
+            transition-duration:0.5s;
+        }
+        .box2 {
+            width: 70%;
+            height: 300px;
+            display:flex;
+            margin-left: 30%;
+        }
+        .box1 {
+            height: 100px;
+            width:200px;
+            display:flex;
+            position:absolute;
+            margin-left: 400px;
+            z-index:100;
+            background-color: red;
+        }
+        .circle {
+            border-radius: 50%;
+            display: flex;
+            background-color: rgb(189, 59, 171);
+            height :100px;
+            width :100px;
+            position :absolute;
+            margin-left:6%;
+            margin-top:14%;
+        }
+        .text {
+            display: flex;
+            height: 15px;
+            width: 50px;
+            text-align: center;
+            line-height: 15px;
+            margin-left: 8.3%;
+            margin-top: 21%;
+            position: absolute;
+        }
+        .box0:hover {
+            height:600px;
+            width:65%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box0">
+        <div class="box2" style="border-top-right-radius: 10px;background-color:cornflowerblue;"></div>
+        <div class="box2" style="background-color: darkgoldenrod;margin-left: "></div>
+        <div class="box2" style="border-bottom-right-radius: 10px;background-color: rgb(62, 190, 190);"></div>
+        <div class="circle"></div>
+        <div class="text">text</div>
+    </div>
+</body>
+</html>

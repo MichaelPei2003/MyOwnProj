@@ -2,7 +2,6 @@ html {
     width: auto;
     border: 2px solid black;
     font-size: 20px;
-    font-family: sans-serif;
 }
 
 h1 {
@@ -18,4 +17,13 @@ h1 {
     height: 200px;
     width: 200px;
     background-color:blueviolet;
+    font-weight:200;
+    color:yellowgreen;
+    font-style: normal;
+}
+#blue {
+    color: blue;
+}
+* {
+    /* 定义页面中的全部元素 */
 }
