@@ -16,10 +16,14 @@ h1 {
 .violet {
     height: 200px;
     width: 200px;
-    background-color:blueviolet;
+    background: linear-gradient(to left,violet,blueviolet);
     font-weight:200;
     color:yellowgreen;
     font-style: normal;
+}
+.violet:hover{
+    box-shadow: -10px -10px 1px black inset;
+    width: 190px;
 }
 #blue {
     color: blue;
