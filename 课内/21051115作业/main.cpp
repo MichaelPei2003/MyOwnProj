@@ -1,12 +1,16 @@
-#include <iostream>
+#include <bits/stdc++.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 
 using namespace std;
 
 void zhuanhuan()
 {
-
+    fflush(stdin);
     char a[101];
-    int i=0,count;
+    int i=0;
     printf("请输入不超过100字符：");
     while(a[i]=getchar(),a[i]!='\n')
     {
@@ -43,12 +47,12 @@ void zhuanhuan()
         }
     }
     printf("%d",num);
-
+    cout<<endl;
 }
 
 void zheban()
 {
-
+    fflush(stdin);
     int N;
     cout<<"请输入数组大小：";
     cin>>N;
@@ -99,7 +103,9 @@ void zheban()
 
 void maopao()
 {
+    fflush(stdin);
     int i,j,n,m;
+    cout<<"请输入数组大小:";
     cin>>n;
     int a[n];
     for(i=0; i<n-1; i++)
@@ -115,6 +121,7 @@ void maopao()
             cout<<endl;
         }
     }
+    cout<<endl;
     for(i=0; i<n-1; i++)
     {
         for(j=0; j<n-1-i; j++)
@@ -136,21 +143,118 @@ void maopao()
             cout<<endl;
         }
     }
+    cout<<endl;
 }
 
 void xuanze()
 {
-
+    fflush(stdin);
+    printf("从小到大的选择排序\n请输入数字个数:");
+    int m;
+    scanf("%d", &m);
+    printf("\n请输入%d个一百以内的数字：",m);
+    int a[100];
+    for(int i; i<m; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    int t;
+    int pos;
+    for(int i=0; i<m; i++)
+    {
+        pos=i;
+        for(int j=i; j<m; j++)
+        {
+            if(a[j]<a[pos])
+            {
+                pos=j;
+            }
+        }
+        t=a[i];
+        a[i]=a[pos];
+        a[pos]=t;
+    }
+    printf("\n升序排序：");
+    for(int i=0; i<m; i++)
+    {
+        printf("%d ",a[i]);
+    }
+    printf("\n");
 }
 
 void juzhen()
 {
-
+    int n;
+    printf("请输入矩阵的阶数：");
+    scanf("%d",&n);
+    printf("请输入一个%d阶矩阵:\n",n);
+    int a[n+1][n+1];
+    int b[n+1][n+1];
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=1; j<=n; j++)
+        {
+            scanf("%d",&a[i][j]);
+            b[i][j]=a[i][j];
+        }
+    }
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=1; j<=n; j++)
+        {
+            b[j][n-i+1]=a[i][j];
+        }
+    }
+    printf("\n顺时针90度：\n");
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=1; j<=n; j++)
+        {
+            printf("%d ",b[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=1; j<=n; j++)
+        {
+            b[n-i+1][n-j+1]=a[i][j];
+        }
+    }
+    printf("\n顺时针180度：\n");
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=1; j<=n; j++)
+        {
+            printf("%d ", b[i][j]);
+        }
+        printf("\n");
+    }
 }
 
 void mmdd()
 {
-
+    fflush(stdin);
+    printf("\n请输入要查找的日期，格式为x月x日：");
+    int x,y;
+    scanf("%d月%d日", &x, &y);
+    int a[366];
+    a[1] = 5;
+    for(int i=2; i<365; i++)
+    {
+        a[i]=a[i-1]+1;
+        if(a[i]==8){a[i]=1;}
+    }
+    int sum=0;
+    //printf("%d", a[365]) ;
+    for(int i=1; i<x; i++)
+    {
+        if(i==1||i==3||i==5||i==7||i==8||i==10||i==12){sum += 31;}
+        else if(i==2) {sum+=28;}
+        else {sum+=30;}
+    }
+    sum=sum+y-1;
+    printf("\n这个日子是星期%d\n", a[sum+1]);
 }
 
 void  menu()
@@ -169,7 +273,7 @@ void  menu()
     }
     else if(a==2)
     {
-        maopao());
+        maopao();
     }
     else if(a==3)
     {
@@ -192,5 +296,10 @@ void  menu()
         printf("无效输入!");
         menu();
     }
+    menu();
 }
 
+int main()
+{
+    menu();
+}
