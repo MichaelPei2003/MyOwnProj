@@ -19,6 +19,12 @@ struct student
     char addr[50];
 };
 
+int LoadData(struct student a[],int n)
+{
+    FILE *fp;
+
+}
+
 void printTitle()
 {
     printf("\n学号    \t姓名\t电话\t        性别\t分数\t地址\n");
