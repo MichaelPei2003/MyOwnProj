@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1645894527 source:c:\users\19832\documents\github\myownproj\课内\c程设实践\debugger\main.c
+	<stdio.h>
+	<stdlib.h>
+

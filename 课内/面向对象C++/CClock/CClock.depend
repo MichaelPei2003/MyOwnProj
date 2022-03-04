@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1646376387 source:c:\users\19832\documents\github\myownproj\课内\面向对象c++\cclock\main.cpp
+	<iostream>
+	"CClock.h"
+
+1646375895 c:\users\19832\documents\github\myownproj\课内\面向对象c++\cclock\cclock.h
+
