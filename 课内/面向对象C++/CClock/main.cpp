@@ -7,6 +7,11 @@ void CClock::ShowTime () const
     cout << m_iHour<< ":" << m_iMinute<< ":" <<m_iSecond << endl;
 }
 
+CClock::~CClock()
+{
+    cout<<"执行时钟类析构函数"<<endl;
+}
+
 int main ()
 {
     CClock  t1, t2;
@@ -16,3 +21,4 @@ int main ()
     t1.ShowTime();
     t2.ShowTime();
 }
+

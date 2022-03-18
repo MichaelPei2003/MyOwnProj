@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1647218146 source:c:\users\19832\documents\github\myownproj\课内\c程设实践\顺序栈\main.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+
+1646615163 c:\users\19832\documents\github\myownproj\课内\c程设实践\顺序栈\list.h
+
