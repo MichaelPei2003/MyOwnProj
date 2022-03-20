@@ -4,6 +4,7 @@ class CClock
 {
 public :
     void ShowTime () const;
+    ~CClock();
     void SetTime (int iHour, int iMinute, int iSecond)
     {
         m_iHour = iHour;
@@ -11,6 +12,6 @@ public :
         m_iSecond = iSecond;
     }
 private:
-    int m_iHour, m_iMinute, m_iSecond;
+    int m_iHour=0, m_iMinute=0, m_iSecond{0};
 };
 #endif // CLOCK_H_INCLUDED
