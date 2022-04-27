@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-#define n 1000000
+#define n 10000
 
 int Create();
 
@@ -21,20 +21,23 @@ void QuickSort();
 
 void QuickSortFunc(int *arr, int low, int high);
 
-int a[n];
+static int a[n], z[n];
 static int i, j, tmp;
 
 int Create() {
     static unsigned int seed = 0;
-    for (int i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         seed++;
         srand((unsigned) time(NULL) + seed * seed);
-        a[i] = rand();
+        z[i] = rand();
     }
 }
 
 void BubbleSort() {
-    Create();
+//    Create();
+    for (i = 0; i < n; i++) {
+        a[i] = z[i];
+    }
     LARGE_INTEGER num;
     long long start, end, freq;
     QueryPerformanceFrequency(&num);
@@ -59,7 +62,10 @@ void BubbleSort() {
 }
 
 void SelectionSort() {
-    Create();
+//    Create();
+    for (i = 0; i < n; i++) {
+        a[i] = z[i];
+    }
     LARGE_INTEGER num;
     long long start, end, freq;
     QueryPerformanceFrequency(&num);
@@ -88,7 +94,10 @@ void SelectionSort() {
 }
 
 void InsertionSort() {
-    Create();
+//    Create();
+    for (i = 0; i < n; i++) {
+        a[i] = z[i];
+    }
     LARGE_INTEGER num;
     long long start, end, freq;
     QueryPerformanceFrequency(&num);
@@ -104,6 +113,7 @@ void InsertionSort() {
             j--;
         }
     }
+    Check();
 //  end of function
     QueryPerformanceCounter(&num);
     end = num.QuadPart;
@@ -111,7 +121,10 @@ void InsertionSort() {
 }
 
 void MergeSort() {
-    Create();
+//    Create();
+    for (i = 0; i < n; i++) {
+        a[i] = z[i];
+    }
     LARGE_INTEGER num;
     long long start, end, freq;
     QueryPerformanceFrequency(&num);
@@ -159,7 +172,10 @@ void MergeSortFunc() {
 }
 
 void QuickSort() {
-    Create();
+//    Create();
+    for (i = 0; i < n; i++) {
+        a[i] = z[i];
+    }
     LARGE_INTEGER num;
     long long start, end, freq;
     QueryPerformanceFrequency(&num);
@@ -177,8 +193,8 @@ void QuickSort() {
 
 void QuickSortFunc(int *arr, int low, int high) {
     if (low < high) {
-        int i = low;
-        int j = high;
+        i = low;
+        j = high;
         int k = arr[low];
         while (i < j) {
             while (i < j && arr[j] >= k) {
@@ -210,7 +226,19 @@ void Check() {
 }
 
 int main() {
+    Create();
     printf("n = %d\n", n);
+//    BubbleSort();
+    SelectionSort();
+    InsertionSort();
+    MergeSort();
+//    QuickSort();
+    a[10] = 10;
+    a[9] = 11;
+    for (i = 0; i < n; i++) {
+        z[n-i-1] = a[i];
+    }
+    printf("\nSort a almost sorted list:\n");
     BubbleSort();
     SelectionSort();
     InsertionSort();
@@ -219,9 +247,8 @@ int main() {
     printf("Unit 1/1000000sec");
 }
 
-//     Get time & create & check
+//     Get time & check
 /*
-    Create();
     LARGE_INTEGER  num;
     long long start,end,freq;
     QueryPerformanceFrequency(&num);

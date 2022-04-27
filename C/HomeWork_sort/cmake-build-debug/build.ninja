@@ -76,6 +76,7 @@ build CMakeFiles/HomeWork_sort.dir/main.c.obj: C_COMPILER__HomeWork_sort_Debug C
 
 build HomeWork_sort.exe: C_EXECUTABLE_LINKER__HomeWork_sort_Debug CMakeFiles/HomeWork_sort.dir/main.c.obj
   FLAGS = -g
+  LINK_FLAGS = -Wl,--stack,999999999
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\HomeWork_sort.dir
   POST_BUILD = cd .

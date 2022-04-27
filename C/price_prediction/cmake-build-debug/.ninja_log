@@ -1,0 +1,9 @@
+# ninja log v5
+0	291	6727509506590329	CMakeFiles/price_prediction.dir/main.c.obj	78fe5c49f83cf66a
+293	429	6727509507996564	price_prediction.exe	7ec6830aa3a1f708
+1	86	6727509741912065	CMakeFiles/price_prediction.dir/main.c.obj	78fe5c49f83cf66a
+87	186	6727509742849787	price_prediction.exe	7ec6830aa3a1f708
+3	132	6727511168125793	CMakeFiles/price_prediction.dir/main.c.obj	78fe5c49f83cf66a
+133	276	6727511169375769	price_prediction.exe	7ec6830aa3a1f708
+2	93	6727511309733027	CMakeFiles/price_prediction.dir/main.c.obj	78fe5c49f83cf66a
+93	192	6727511310671458	price_prediction.exe	7ec6830aa3a1f708
