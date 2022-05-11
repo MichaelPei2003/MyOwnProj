@@ -1,0 +1,11 @@
+# ninja log v5
+0	317	6737613802732411	CMakeFiles/Iris_K_Means.dir/main.c.obj	a6efb888cdc554af
+321	1019	6737613809814504	Iris_K_Means.exe	ddbd66ee228e45fc
+3	173	6737614251127473	CMakeFiles/Iris_K_Means.dir/main.c.obj	a6efb888cdc554af
+174	350	6737614252768784	Iris_K_Means.exe	ddbd66ee228e45fc
+1	138	6737615539320590	CMakeFiles/Iris_K_Means.dir/main.c.obj	a6efb888cdc554af
+138	299	6737615540927535	Iris_K_Means.exe	ddbd66ee228e45fc
+2	140	6737618533830924	CMakeFiles/Iris_K_Means.dir/main.c.obj	a6efb888cdc554af
+141	312	6737618535434597	Iris_K_Means.exe	ddbd66ee228e45fc
+2	146	6737623424013855	CMakeFiles/Iris_K_Means.dir/main.c.obj	a6efb888cdc554af
+148	338	6737623425927282	Iris_K_Means.exe	ddbd66ee228e45fc
