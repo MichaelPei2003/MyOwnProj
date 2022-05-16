@@ -1,0 +1,3 @@
+C:/Users/19832/Documents/GitHub/MyOwnProj/C/boston_housing_price_prediction(BPNetwork)/cmake-build-debug/CMakeFiles/boston_housing_price_prediction_BPNetwork_.dir
+C:/Users/19832/Documents/GitHub/MyOwnProj/C/boston_housing_price_prediction(BPNetwork)/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/19832/Documents/GitHub/MyOwnProj/C/boston_housing_price_prediction(BPNetwork)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
