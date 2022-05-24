@@ -4,17 +4,10 @@
 #include <conio.h>
 #include "Snake.h"
 #include "Console_Operations.h"
-#include "Snake.h"
-
-#define MAP_HEIGHT 20
-#define MAP_WIDTH 402
-
-#define UP 'w'
-#define DOWN 's'
-#define LEFT 'a'
-#define RIGHT 'd'
 
 int Menu() {
+    GotoXY(38, 8);
+    printf("Please use full screen.");
     GotoXY(40, 12);
     printf("SNAKE!");
     GotoXY(39, 14);
@@ -64,7 +57,13 @@ void Help() {
 
 void About() {
     GotoXY(40, 12);
-    printf("This is nothing other than a Snake game.");
+    printf("This is nothing other than a open-source Snake game.");
+    GotoXY(35, 14);
+    printf("Source code can be found at https://github.com/MichaelPei2003/MyOwnProj/tree/main/C/Snake");
+    GotoXY(40, 17);
+    printf("Press any key to return.");
+    char ch = _getch();
+    system("cls");
 }
 
 int main() {
@@ -80,6 +79,13 @@ int main() {
             case 2:
                 Help();
                 break;
+            case 3:
+                About();
+                break;
+            case 0:
+                end = 0;
+                break;
         }
     }
+    return 0;
 }
