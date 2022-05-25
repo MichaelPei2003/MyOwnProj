@@ -112,6 +112,7 @@ int IsCorrect() {
                 GotoXY(snake.snakeNode[j].x, snake.snakeNode[j].y);
                 printf(" ");
             }
+            snake.length -= (snake.length - i);
         }
     }
     return 1;//hit nothing
@@ -248,6 +249,7 @@ int MoveSnake() {
     printf("@");
     if (snake.snakeNode[0].x == food.x && snake.snakeNode[0].y == food.y) {
         snake.length += food.val;
+        score += food.val;
         flag = 1;
         snake.snakeNode[snake.length - 1] = tmp;
     }
@@ -257,15 +259,164 @@ int MoveSnake() {
     } else {
         PrintFood();
         GotoXY(50, 5);
-        printf("Current Points: %d", snake.length - 3);
+        printf("Current Points: %d", score);
+        GotoXY(tmp.x, tmp.y);
+        printf(" ");
     }
     if (!IsCorrect()) {
         system("cls");
-        score = snake.length - 3;
         GotoXY(45, 16);
-        printf("Final Points: %d", snake.length - 3);
+        printf("Final Points: %d", score);
         GotoXY(48, 14);
         printf("You Died!");
+        return 0;
+    }
+    SpeedControl();
+    Sleep(snake.speed);
+    return 1;
+}
+
+void CheatFood() {
+    int flag = 1;
+    food.val = 5;
+    while (flag) {
+        flag = 0;
+        food.x = rand() % (MAP_WIDTH - 2) + 1;
+        food.y = rand() % (MAP_HEIGHT - 2) + 1;
+        for (int k = 0; k < snake.length; k++) {
+            if ((snake.snakeNode[k].x == food.x && snake.snakeNode[k].y == food.y)) {
+                flag = 1;
+                break;
+            }
+        }
+    }
+    GotoXY(food.x, food.y);
+    printf("$");
+}
+
+void CheatInit() {
+    HideCursor();
+    snake.snakeNode[0].x = MAP_WIDTH / 2 - 1;
+    snake.snakeNode[0].y = MAP_HEIGHT / 2 - 1;
+    GotoXY(snake.snakeNode[0].x, snake.snakeNode[0].y);
+    printf("@");
+    snake.length = 3;
+    snake.speed = 250;
+    now_Dir = RIGHT;
+    for (int i = 1; i < snake.length; i++) {
+        snake.snakeNode[i].y = snake.snakeNode[i - 1].y;
+        snake.snakeNode[i].x = snake.snakeNode[i - 1].x - 1;
+        GotoXY(snake.snakeNode[i].x, snake.snakeNode[i].y);
+        printf("o");
+    }
+    for (int i = 0; i < MAP_WIDTH; i++) {
+        GotoXY(i, 0);
+        printf("-");
+        GotoXY(i, MAP_HEIGHT - 1);
+        printf("-");
+    }
+    for (int i = 1; i < MAP_HEIGHT - 1; i++) {
+        GotoXY(0, i);
+        printf("|");
+        GotoXY(MAP_WIDTH - 1, i);
+        printf("|");
+    }
+    CheatFood();
+//    PrintObs();
+    GotoXY(50, 5);
+    printf("Current Points: 0");
+}
+
+
+int Cheated() {
+    GotoXY(50, 4);
+    printf("Current Speed: %d", snake.speed);
+    SnakeNode tmp;
+    int flag = 0;
+    tmp = snake.snakeNode[snake.length - 1];
+    for (int i = snake.length - 1; i >= 1; i--) {
+        snake.snakeNode[i] = snake.snakeNode[i - 1];
+    }
+    GotoXY(snake.snakeNode[1].x, snake.snakeNode[1].y);
+    printf("o");
+    if (_kbhit()) {
+        direction = _getch();
+        switch (direction) {
+            case UP:
+                if (now_Dir != DOWN) {
+                    now_Dir = direction;
+                }
+                break;
+            case DOWN:
+                if (now_Dir != UP) {
+                    now_Dir = direction;
+                }
+                break;
+            case LEFT:
+                if (now_Dir != RIGHT) {
+                    now_Dir = direction;
+                }
+                break;
+            case RIGHT:
+                if (now_Dir != LEFT) {
+                    now_Dir = direction;
+                }
+                break;
+            case 27://keyboard input = "esc"
+                GotoXY(50, 6);
+                printf("Game Paused.");
+                GotoXY(50, 7);
+                printf("Press any key to continue.");
+                char ch = _getch();
+                GotoXY(50, 6);
+                printf("            ");
+                GotoXY(50, 7);
+                printf("                                  ");
+                GotoXY(tmp.x, tmp.y);
+                printf(" ");
+                return 1;
+        }
+    }
+    switch (now_Dir) {
+        case UP:
+            snake.snakeNode[0].y--;
+            break;
+        case DOWN:
+            snake.snakeNode[0].y++;
+            break;
+        case LEFT:
+            snake.snakeNode[0].x--;
+            break;
+        case RIGHT:
+            snake.snakeNode[0].x++;
+            break;
+    }
+    GotoXY(snake.snakeNode[0].x, snake.snakeNode[0].y);
+    printf("@");
+    if (snake.snakeNode[0].x == food.x && snake.snakeNode[0].y == food.y) {
+        snake.length += food.val;
+        score += food.val;
+        flag = 1;
+        snake.snakeNode[snake.length - 1] = tmp;
+    }
+    if (!flag) {
+        GotoXY(tmp.x, tmp.y);
+        printf(" ");
+    } else {
+        CheatFood();
+        GotoXY(50, 5);
+        printf("Current Points: %d", score);
+        GotoXY(tmp.x, tmp.y);
+        printf(" ");
+    }
+    if (snake.snakeNode[0].x == 0 || snake.snakeNode[0].y == 0 || snake.snakeNode[0].x == MAP_WIDTH - 1 ||
+        snake.snakeNode[0].y == MAP_HEIGHT - 1) {
+        system("cls");
+        GotoXY(45, 16);
+        printf("Final Points: %d", score);
+        GotoXY(48, 14);
+        printf("You Died!");
+        char ch = _getch();
         return 0;
     }
     SpeedControl();

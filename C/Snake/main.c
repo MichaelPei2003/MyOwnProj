@@ -47,6 +47,12 @@ int Menu() {
             break;
         case '4':
             result = 4;
+            break;
+        case '9':
+            result = 9;
+            break;
+        default:
+            result = 0;
     }
     system("cls");
     return result;
@@ -123,6 +129,8 @@ void Help() {
 
 void About() {
     system("cls");
+    GotoXY(40, 10);
+    printf("Not copyright of MichaelPei2003(laughs)");
     GotoXY(40, 12);
     printf("This is nothing other than a open-source Snake game.");
     GotoXY(40, 14);
@@ -131,13 +139,59 @@ void About() {
     printf("Source code can be found at https://github.com/MichaelPei2003/MyOwnProjects/tree/main/C/Snake");
     GotoXY(40, 18);
     printf("Press any key to return.");
+    GotoXY(120, 40);
+    printf("Scroll down!");
+    GotoXY(40, 100);
+    printf("Press 9 at menu to enter CHEAT mode.Believe it or not, it's only for development purposes.");
+    GotoXY(1, 1);
     HideCursor();
     char ch = _getch();
     system("cls");
 }
 
+void AboutCheat() {
+    system("cls");
+    GotoXY(40, 10);
+    printf("During cheat mode, you can have:");
+    GotoXY(46, 12);
+    printf("No obstacles, the only thing harms you is the wall.");
+    GotoXY(46, 14);
+    printf("Only 5 point food would appear.");
+    GotoXY(46, 16);
+    printf("You can see your current speed");
+    GotoXY(40, 18);
+    printf("But, the scores will not be stored.");
+    printf("Press any key to return.");
+    char ch = _getch();
+}
+
+void CheatMode() {
+    start:
+    system("cls");
+    GotoXY(40, 10);
+    printf("Cheat Activated!");
+    GotoXY(40, 12);
+    printf("About cheat mode, press 1.");
+    GotoXY(40, 14);
+    printf("Press 0 to regret.");
+    HideCursor();
+    char ch = _getch();
+    if(ch == '0') {
+        return;
+    } else if(ch == '1') {
+        AboutCheat();
+        goto start;
+    }
+    system("cls");
+    CheatInit();
+    while(Cheated());
+}
+
 int main() {
     int rkCnt = 0;
+    for(int i = 0; i < 10; i++) {
+        rank[i].isUsed = 0;
+    }
     srand((unsigned int) time(0));
     int end = 1, result;
     while (end) {
@@ -167,6 +221,9 @@ int main() {
                 break;
             case 4:
                 About();
+                break;
+            case 9:
+                CheatMode();
                 break;
             case 0:
                 end = 0;
