@@ -10,6 +10,8 @@
 #define MAP_HEIGHT 20
 #define MAP_WIDTH 40
 
+int score;
+
 typedef struct {
     int x;
     int y;
@@ -223,6 +225,8 @@ int MoveSnake() {
                 printf("            ");
                 GotoXY(50, 7);
                 printf("                           ");
+                GotoXY(tmp.x, tmp.y);
+                printf(" ");
                 return 1;
         }
     }
@@ -257,14 +261,11 @@ int MoveSnake() {
     }
     if (!IsCorrect()) {
         system("cls");
-        GotoXY(45, 14);
-        printf("Final Points: %d", snake.length - 3);
+        score = snake.length - 3;
         GotoXY(45, 16);
-        printf("You Lose!");
-        GotoXY(45, 18);
-        printf("Press Any Key To Continue.");
-        char c = _getch();
-        system("cls");
+        printf("Final Points: %d", snake.length - 3);
+        GotoXY(48, 14);
+        printf("You Died!");
         return 0;
     }
     SpeedControl();
