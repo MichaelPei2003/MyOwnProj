@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int outputTag = 0;
+
 template<class T>
 class CVector {
     T *arry;
@@ -21,8 +23,8 @@ public:
         for (int i = 0; i < size; i++) {
             tmp[i] = arry[i];
         }
-        size += 1;
         tmp[size] = a;
+        size += 1;
         swap(arry, tmp);
         delete[]tmp;
     }
@@ -41,22 +43,26 @@ public:
 };
 
 int main() {
-    string op;
-    string n3;
+    string op, n3;
     int n1, n2;  //used 4 inputs only
+    Start:
     while (cin >> op >> n1) {
+        if (outputTag != 0) {
+            cout << endl;
+        }
+        outputTag++;
+
         if (op == "int") {
             CVector<int> vec(n1);
+
             while (cin >> op) {
                 if (op == "push") {
                     cin >> n1;
                     vec.push_back(n1);
-                }
-                if (op == "put") {
+                } else if (op == "put") {
                     cin >> n1 >> n2;//n1: pos; n2: value
                     vec.put(n1, n2);
-                }
-                if (op == "fetch") {
+                } else if (op == "fetch") {
                     cin >> n1;
                     try {
                         vec.fetch(n1);
@@ -65,10 +71,16 @@ int main() {
                         cout << "invalid index:" << err << " ";
                     }
                 }//end of if
+                else if (op == "quit") {
+                    goto Start;
+                }
             }//end of while
+
         }//end of if
+
         if (op == "string") {
             CVector<string> vec(n1);
+
             while (cin >> op) {
                 if (op == "push") {
                     cin >> n3;
@@ -88,6 +100,8 @@ int main() {
                     }
                 }//end of if
             }//end of while
+
         }//end of if
+
     }//end of while
 }
