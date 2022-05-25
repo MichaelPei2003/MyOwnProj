@@ -126,7 +126,7 @@ void About() {
     GotoXY(40, 12);
     printf("This is nothing other than a open-source Snake game.");
     GotoXY(40, 14);
-    printf("Part of the game is from hdu's textbook.")
+    printf("Part of the game is from hdu's textbook.");
     GotoXY(40, 16);
     printf("Source code can be found at https://github.com/MichaelPei2003/MyOwnProjects/tree/main/C/Snake");
     GotoXY(40, 18);
