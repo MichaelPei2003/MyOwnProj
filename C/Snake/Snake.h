@@ -13,7 +13,13 @@
 typedef struct {
     int x;
     int y;
-} Food, SnakeNode, Obstacle;
+} SnakeNode, Obstacle;
+
+typedef struct {
+    int x;
+    int y;
+    int val;
+} Food;
 
 typedef struct {
     SnakeNode snakeNode[1000];
@@ -30,6 +36,7 @@ char direction = RIGHT;
 
 void PrintFood() {
     int flag = 1;
+    food.val = rand() % 5 + 1;
     while (flag) {
         flag = 0;
         food.x = rand() % (MAP_WIDTH - 2) + 1;
@@ -48,7 +55,23 @@ void PrintFood() {
         }
     }
     GotoXY(food.x, food.y);
-    printf("$");
+    switch (food.val) {
+        case 1:
+            printf("A");
+            break;
+        case 2:
+            printf("B");
+            break;
+        case 3:
+            printf("C");
+            break;
+        case 4:
+            printf("D");
+            break;
+        case 5:
+            printf("$");
+            break;
+    }
 }
 
 void PrintObs() {
@@ -83,7 +106,7 @@ int IsCorrect() {
     }
     for (int i = 1; i < snake.length; i++) {
         if (snake.snakeNode[0].x == snake.snakeNode[i].x && snake.snakeNode[0].y == snake.snakeNode[i].y) {
-            for(int j = i + 1; j < snake.length; j++) {
+            for (int j = i + 1; j < snake.length; j++) {
                 GotoXY(snake.snakeNode[j].x, snake.snakeNode[j].y);
                 printf(" ");
             }
@@ -191,6 +214,16 @@ int MoveSnake() {
                     now_Dir = direction;
                 }
                 break;
+            case 27://keyboard input = "esc"
+                GotoXY(50, 6);
+                printf("Game Paused.");
+                GotoXY(50, 7);
+                system("pause");
+                GotoXY(50, 6);
+                printf("            ");
+                GotoXY(50, 7);
+                printf("                           ");
+                return 1;
         }
     }
     switch (now_Dir) {
@@ -210,7 +243,7 @@ int MoveSnake() {
     GotoXY(snake.snakeNode[0].x, snake.snakeNode[0].y);
     printf("@");
     if (snake.snakeNode[0].x == food.x && snake.snakeNode[0].y == food.y) {
-        snake.length++;
+        snake.length += food.val;
         flag = 1;
         snake.snakeNode[snake.length - 1] = tmp;
     }

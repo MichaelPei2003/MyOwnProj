@@ -41,15 +41,15 @@ void Help() {
     GotoXY(40, 12);
     printf("HELP");
     GotoXY(40, 14);
-    printf("up: w");
+    printf("Press W to go upward");
     GotoXY(40, 16);
-    printf("down: s");
+    printf("Press S to go downward");
     GotoXY(40, 18);
-    printf("left: a");
+    printf("Press A to go leftward");
     GotoXY(40, 20);
-    printf("right: d");
-    GotoXY(35, 22);
-    printf("Press any key to return.");
+    printf("Press D to go rightward");
+    GotoXY(40, 22);
+    printf("Press ESC to pause game");
     HideCursor();
     char ch = _getch();
     system("cls");
@@ -58,8 +58,8 @@ void Help() {
 void About() {
     GotoXY(40, 12);
     printf("This is nothing other than a open-source Snake game.");
-    GotoXY(35, 14);
-    printf("Source code can be found at https://github.com/MichaelPei2003/MyOwnProj/tree/main/C/Snake");
+    GotoXY(40, 14);
+    printf("Source code can be found at https://github.com/MichaelPei2003/MyOwnProjects/tree/main/C/Snake");
     GotoXY(40, 17);
     printf("Press any key to return.");
     char ch = _getch();
