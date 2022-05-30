@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
-project(idiom)
+project (idiom)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(idiom main.cpp idiom.h idiom.cpp)
+add_executable(idiom main.cpp)

@@ -1,28 +1,7 @@
-#include "idiom.h"
+#include <iostream>
 
-int main(){
-    int result;
-    int end = 1;
-    IdiomRead();
-    while(end){
-        result = Menu();
-        switch (result){
-            case 1:
-                InitMap();
-                while(GameStart()){
-
-                }
-                break;
-            case 2:
-                Help();
-                break;
-            case 3:
-                About();
-                break;
-            case 0:
-                end = 0;
-                break;
-        }
-    }
+int main()
+{
+    std::cout<<"Hello, World!"<<std::endl;
     return 0;
 }

@@ -1,3 +1,0 @@
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/idiom/cmake-build-debug/CMakeFiles/idiom.dir
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/idiom/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/idiom/cmake-build-debug/CMakeFiles/rebuild_cache.dir
