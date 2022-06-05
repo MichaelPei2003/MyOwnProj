@@ -1,0 +1,16 @@
+# ninja log v5
+1	576	6761155168396250	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+578	837	6761155170988600	std_unsigned_num.exe	b07395e02bc6972c
+2	279	6761155637962992	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+279	347	6761155638633603	std_unsigned_num.exe	b07395e02bc6972c
+2	679	6761168362513294	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+679	804	6761168363744410	std_unsigned_num.exe	b07395e02bc6972c
+1	1580	6761472022097635	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+2	297	6761473516550664	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+1	298	6761473810747999	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+2	300	6761474173537665	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+2	298	6761474451790511	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+1	311	6761476172353977	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+1	296	6761476344029976	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+2	389	6761478341555194	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
+2	298	6761478646247097	CMakeFiles/std_unsigned_num.dir/main.cpp.obj	57d9bc00cf5c0d92
