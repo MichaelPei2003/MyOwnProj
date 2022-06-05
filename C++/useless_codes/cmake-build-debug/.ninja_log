@@ -1,3 +1,9 @@
 # ninja log v5
 0	1014	6741544604120746	CMakeFiles/useless_codes.dir/main.cpp.obj	1fdcc16e759be993
 1017	1128	6741544605220702	useless_codes.exe	ad695c52a2f32fc3
+1	216	6760439870820176	CMakeFiles/useless_codes.dir/main.cpp.obj	918240195d1e0f18
+217	565	6760439874293329	useless_codes.exe	b24e8bc20ff5544b
+1	213	6760440025400761	CMakeFiles/useless_codes.dir/main.cpp.obj	918240195d1e0f18
+214	276	6760440026001308	useless_codes.exe	b24e8bc20ff5544b
+2	211	6760440731107429	CMakeFiles/useless_codes.dir/main.cpp.obj	918240195d1e0f18
+211	273	6760440731727977	useless_codes.exe	b24e8bc20ff5544b
