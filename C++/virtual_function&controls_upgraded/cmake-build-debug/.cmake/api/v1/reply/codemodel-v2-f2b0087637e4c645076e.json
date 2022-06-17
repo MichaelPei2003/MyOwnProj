@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.22"
+						"string" : "3.21"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "inheritation__controls_",
+					"name" : "virtual_function_controls_upgraded",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "inheritation__controls_::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-inheritation__controls_-Debug-25b898d1fed1d19547f4.json",
-					"name" : "inheritation__controls_",
+					"id" : "virtual_function_controls_upgraded::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-virtual_function_controls_upgraded-Debug-daa98f300a514e29e24c.json",
+					"name" : "virtual_function_controls_upgraded",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/19832/Documents/GitHub/MyOwnProj/C++/inheritation_'controls'/cmake-build-debug",
-		"source" : "C:/Users/19832/Documents/GitHub/MyOwnProj/C++/inheritation_'controls'"
+		"build" : "C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/virtual_function&controls_upgraded/cmake-build-debug",
+		"source" : "C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/virtual_function&controls_upgraded"
 	},
 	"version" : 
 	{

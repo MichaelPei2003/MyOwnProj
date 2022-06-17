@@ -29,14 +29,14 @@ public:
     virtual bool HitIn(int x, int y) const = 0;
 };
 
-class CRectangle : public CShape {
+class CRectangle : virtual public CShape {
     CPoint pos;
     int width;
     int height;
 public:
     CRectangle(int w, int h, CPoint p) : width(w), height(h), pos(p) {}
 
-    ~CRectangle() override {}
+//    ~CRectangle() override {}
 
     bool HitIn(int x, int y) const {
         if (x >= pos.x && x <= pos.x + width && y >= pos.y && y <= pos.y + height) {
@@ -47,13 +47,13 @@ public:
     }
 };
 
-class CCircle : public CShape {
+class CCircle : virtual public CShape {
     CPoint pos;
     double radius;
 public:
     CCircle(double r, CPoint p) : radius(r), pos(p) {}
 
-    ~CCircle() {}
+//    ~CCircle() {}
 
     bool HitIn(int x, int y) const {
         double d = sqrt(pow((x - pos.x), 2) + pow((y - pos.y), 2));

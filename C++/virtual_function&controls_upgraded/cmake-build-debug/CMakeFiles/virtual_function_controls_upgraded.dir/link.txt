@@ -1,3 +1,3 @@
-"D:\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\virtual_function_controls_upgraded.dir/objects.a
-"D:\CLion 2022.1\bin\mingw\bin\ar.exe" qc CMakeFiles\virtual_function_controls_upgraded.dir/objects.a @CMakeFiles\virtual_function_controls_upgraded.dir\objects1.rsp
-"D:\CLion 2022.1\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\virtual_function_controls_upgraded.dir/objects.a -Wl,--no-whole-archive -o virtual_function_controls_upgraded.exe -Wl,--out-implib,libvirtual_function_controls_upgraded.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\virtual_function_controls_upgraded.dir\linklibs.rsp
+"E:\CLion\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\virtual_function_controls_upgraded.dir/objects.a
+"E:\CLion\CLion 2022.1.1\bin\mingw\bin\ar.exe" qc CMakeFiles\virtual_function_controls_upgraded.dir/objects.a @CMakeFiles\virtual_function_controls_upgraded.dir\objects1.rsp
+"E:\CLion\CLion 2022.1.1\bin\mingw\bin\g++.exe" -g -static -Wl,--whole-archive CMakeFiles\virtual_function_controls_upgraded.dir/objects.a -Wl,--no-whole-archive -o virtual_function_controls_upgraded.exe -Wl,--out-implib,libvirtual_function_controls_upgraded.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\virtual_function_controls_upgraded.dir\linklibs.rsp

@@ -154,4 +154,4 @@ int main() {
     } else {
         cout << "0";
     }
-}
+};

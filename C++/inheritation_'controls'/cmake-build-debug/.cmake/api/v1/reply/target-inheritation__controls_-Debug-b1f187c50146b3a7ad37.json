@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "virtual_function_controls_upgraded.exe"
+			"path" : "inheritation__controls_.exe"
 		},
 		{
-			"path" : "virtual_function_controls_upgraded.pdb"
+			"path" : "inheritation__controls_.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "virtual_function_controls_upgraded::@6890427a1f51a3e7e1df",
+	"id" : "inheritation__controls_::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,7 +69,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-static",
 				"role" : "flags"
 			},
 			{
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "virtual_function_controls_upgraded",
-	"nameOnDisk" : "virtual_function_controls_upgraded.exe",
+	"name" : "inheritation__controls_",
+	"nameOnDisk" : "inheritation__controls_.exe",
 	"paths" : 
 	{
 		"build" : ".",

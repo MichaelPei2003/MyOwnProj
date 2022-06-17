@@ -1,0 +1,6 @@
+# ninja log v5
+2	218	6768128802246724	CMakeFiles/xp_identifier.dir/main.cpp.obj	be3821a28f68d7a7
+218	472	6768128804746710	xp_identifier.exe	3503a8a0a35653a6
+1	94	6768160204508272	build.ninja	4e0a5f6c90e860ec
+1	358	6768161030701111	CMakeFiles/xp_identifier.dir/main.cpp.obj	be3821a28f68d7a7
+359	1261	6768161039607350	xp_identifier.exe	3503a8a0a35653a6
