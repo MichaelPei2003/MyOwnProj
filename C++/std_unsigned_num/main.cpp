@@ -1,41 +1,49 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 #include <vector>
+#include <string>
 
 using namespace std;
 
 class Num {
     vector<int> num;
 public:
-    Num();
+    Num() = default;
 
-    Num(string &tmp);
+    Num(string &rhs);
 
     Num(Num &rhs);
 
-    ~Num() = default;
+    Num &operator=(Num &&rhs) noexcept;
 
     void Display();
 
-    Num Add(Num &rhs);
-
     int Compare(Num &rhs);
 
-    void Minus(Num &rhs);
+    Num Add(Num &rhs);
+
+    Num Minus(Num &rhs);
 };
 
-Num::Num(string &tmp) {
-    int len = tmp.size();
+Num::Num(string &rhs) {
+    int len = rhs.size();
     for (int i = len - 1; i >= 0; i--) {
-        num.push_back(tmp[i]);
+        num.push_back(rhs[i] - '0');
     }
 }
 
 Num::Num(Num &rhs) {
     int len = rhs.num.size();
-    for (int i = len - 1; i >= 0; i--) {
+    for (int i = 0; i < len; i++) {
         num.push_back(rhs.num[i]);
     }
+}
+
+Num &Num::operator=(Num &&rhs) noexcept {
+    int len = rhs.num.size();
+    for (int i = 0; i < len; i++) {
+        num.push_back(rhs.num[i]);
+    }
+    return *this;
 }
 
 void Num::Display() {
@@ -44,114 +52,142 @@ void Num::Display() {
         cout << "0";
         return;
     }
+    int tag = 0;
     for (int i = len - 1; i >= 0; i--) {
-        if (num[i] == 0) {
+        if (num[i] == 0 && tag == 0) {
             continue;
         }
+        tag = 1;
         cout << num[i];
     }
 }
 
-int Num::Compare(Num &tmp) {
-    int rtn = 0;
-    if(num.size() > tmp.num.size()) rtn = 1;
-    else if(num.size() < tmp.num.size()) rtn = -1;
-    else if(num.size() == tmp.num.size()){
-        //逐位比较
-        int len = num.size();
-        for(int i = len - 1 ; i >= 0; i--){
-            if(num[i] == tmp.num[i]) continue;
-            else if(num[i] > tmp.num[i]){
-                rtn = 1;
-                break;
-            }
-            else{
-                rtn = -1;
-                break;
+int Num::Compare(Num &rhs) {
+    int len1 = num.size(), len2 = rhs.num.size();
+    if (len1 > len2) {
+        return 1;
+    } else if (len2 > len1) {
+        return 2;
+    } else if (len1 == len2) {
+        for (int i = len1; i >= 0; i--) {
+            if (num[i] < rhs.num[i]) {
+                return 2;
+            } else if (num[i] > rhs.num[i]) {
+                return 1;
             }
         }
+        return 0;
     }
-    //根据f的值输出结果
-    this->Display();
-    if(rtn == 0) cout<<" == ";
-    else if(rtn == 1) cout<<" > ";
-    else if(rtn == -1) cout<<" < ";
-    tmp.Display();
-    return rtn;
+    return 3;
 }
 
 Num Num::Add(Num &rhs) {
-    int lenMin = num.size(), lenMax = rhs.num.size(), sum, ext = 0, tag = 0;// tag == 0 -> rhs>this
+    int len1 = num.size(), len2 = rhs.num.size(), sum, ext = 0;
     Num rtn;
-    if (lenMax < lenMin) {
-        int tmp = lenMin;
-        lenMin = lenMax;
-        lenMax = tmp;
-        tag = 1;
-    }
-    for (int i = 0; i < lenMin; i++) {
-        sum = rhs.num[i] + num[i] + ext;
-        ext = 0;
-        if (sum >= 10) {
-            ext = sum / 10;
-            sum %= 10;
-        }
-        rtn.num.push_back(sum);
-    }
-    if (tag == 0) {
-        for (int i = lenMin; i < lenMax; i++) {
-            sum = num[i] + ext;
-            ext = 0;
+//    cout << "tag1";
+    if (len1 <= len2) {
+        for (int i = 0; i < len1; i++) {
+            sum = num[i] + rhs.num[i] + ext;
             if (sum >= 10) {
                 ext = sum / 10;
                 sum %= 10;
                 rtn.num.push_back(sum);
+            } else {
+                rtn.num.push_back(sum);
             }
         }
-    } else if (tag == 1) {
-        for (int i = lenMin; i < lenMax; i++) {
+        for (int i = len1; i < len2; i++) {
             sum = rhs.num[i] + ext;
-            ext = 0;
             if (sum >= 10) {
                 ext = sum / 10;
                 sum %= 10;
                 rtn.num.push_back(sum);
+            } else {
+                rtn.num.push_back(sum);
             }
         }
+        if (ext > 0) {
+            rtn.num.push_back(ext);
+        }
+    } else if (len1 > len2) {
+//        cout<<"tag";
+        for (int i = 0; i < len2; i++) {
+            sum = num[i] + rhs.num[i] + ext;
+            if (sum >= 10) {
+                ext = sum / 10;
+                sum %= 10;
+                rtn.num.push_back(sum);
+            } else {
+                rtn.num.push_back(sum);
+            }
+        }
+        for (int i = len2; i < len1; i++) {
+            sum = num[i] + ext;
+            if (sum >= 10) {
+                ext = sum / 10;
+                sum %= 10;
+                rtn.num.push_back(sum);
+            } else {
+                rtn.num.push_back(sum);
+            }
+        }
+        if (ext > 0) {
+            rtn.num.push_back(ext);
+        }
     }
-    if (ext != 0) {
-        rtn.num.push_back(ext);
-    }
+//    cout << "tag2";
+//    rtn.Display();
+//    cout << endl;
     return rtn;
 }
 
-void Num::Minus(Num &tmp){
-    //tmp为较小数
-    //为了节省空间,直接在this上做减法
-    int len = tmp.num.size();
-    for(int i = 0; i < len; i++){
-        num[i] -= tmp.num[i];
-        if(num[i] < 0){
-            num[i+1]--;
+Num Num::Minus(Num &rhs) {
+    int len = rhs.num.size();
+    for (int i = 0; i < len; i++) {
+        num[i] -= rhs.num[i];
+        if(num[i] < 0) {
+            num[i + 1]--;
             num[i] += 10;
         }
     }
-    this->Display();
+    return *this;
 }
 
 int main() {
     string n1, n2;
     cin >> n1 >> n2;
     Num num1(n1), num2(n2);
-    int rst = num1.Compare(num2);
+    int result = num1.Compare(num2);// 1 -> num1 > num2 ; 2 -> num2 > num1; 0 -> num1 == num2
+    num1.Display();
+    switch (result) {
+        case 0:
+            cout << "==";
+            break;
+        case 1:
+            cout << ">";
+            break;
+        case 2:
+            cout << "<";
+            break;
+        default:
+            break;
+    }
+    num2.Display();
     cout << endl;
     num1.Add(num2).Display();
     cout << endl;
-    if (rst == 1) {
-        num2.Minus(num1);
-    } else if (rst == 2) {
-        num1.Minus(num2);
-    } else {
-        cout << "0";
+    switch (result) {
+        case 0:
+            cout << "0";
+            break;
+        case 1:
+            num1.Minus(num2).Display();
+            break;
+        case 2:
+            num2.Minus(num1).Display();
+            break;
+        default:
+            break;
     }
+    return 0;
 }
