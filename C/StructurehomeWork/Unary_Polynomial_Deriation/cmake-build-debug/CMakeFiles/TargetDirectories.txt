@@ -1,0 +1,3 @@
+C:/Users/Michael/Documents/GitHub/MyOwnProj/C/StructurehomeWork/Unary_Polynomial_Deriation/cmake-build-debug/CMakeFiles/Unary_Polynomial_Deriation.dir
+C:/Users/Michael/Documents/GitHub/MyOwnProj/C/StructurehomeWork/Unary_Polynomial_Deriation/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Michael/Documents/GitHub/MyOwnProj/C/StructurehomeWork/Unary_Polynomial_Deriation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
