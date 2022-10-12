@@ -1,3 +1,0 @@
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/std_unsigned_num/cmake-build-debug/CMakeFiles/std_unsigned_num.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/std_unsigned_num/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/std_unsigned_num/cmake-build-debug/CMakeFiles/rebuild_cache.dir

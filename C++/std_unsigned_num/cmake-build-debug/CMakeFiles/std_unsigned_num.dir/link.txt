@@ -1,3 +1,0 @@
-"D:\CLion\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\std_unsigned_num.dir/objects.a
-"D:\CLion\CLion 2022.1.2\bin\mingw\bin\ar.exe" qc CMakeFiles\std_unsigned_num.dir/objects.a @CMakeFiles\std_unsigned_num.dir\objects1.rsp
-"D:\CLion\CLion 2022.1.2\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\std_unsigned_num.dir/objects.a -Wl,--no-whole-archive -o std_unsigned_num.exe -Wl,--out-implib,libstd_unsigned_num.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\std_unsigned_num.dir\linklibs.rsp
