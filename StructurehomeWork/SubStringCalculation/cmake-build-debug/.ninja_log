@@ -1,0 +1,21 @@
+# ninja log v5
+0	65	6878775153266707	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+66	168	6878775154257073	SubStringCalculation.exe	9f4120a23811b07c
+2	62	6878775370147687	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+62	137	6878775370857688	SubStringCalculation.exe	9f4120a23811b07c
+1	57	6878776070887932	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+57	130	6878776071578208	SubStringCalculation.exe	9f4120a23811b07c
+1	55	6878776656660278	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+55	129	6878776657361069	SubStringCalculation.exe	9f4120a23811b07c
+2	67	6878778185097416	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+67	143	6878778185817263	SubStringCalculation.exe	9f4120a23811b07c
+2	61	6878782945783248	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+61	134	6878782946473051	SubStringCalculation.exe	9f4120a23811b07c
+2	60	6878786299459772	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+60	136	6878786300179648	SubStringCalculation.exe	9f4120a23811b07c
+1	81	6878786801108656	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+81	240	6878786802298653	SubStringCalculation.exe	9f4120a23811b07c
+1	59	6878787625172368	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+59	133	6878787625873189	SubStringCalculation.exe	9f4120a23811b07c
+2	61	6878790540655216	CMakeFiles/SubStringCalculation.dir/main.c.obj	e2bab4fefa3e8ce9
+61	138	6878790541385104	SubStringCalculation.exe	9f4120a23811b07c
