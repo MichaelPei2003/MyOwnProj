@@ -1,3 +1,0 @@
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C/StructurehomeWork/linklist_combination/cmake-build-debug/CMakeFiles/linklist_combination.dir
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C/StructurehomeWork/linklist_combination/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C/StructurehomeWork/linklist_combination/cmake-build-debug/CMakeFiles/rebuild_cache.dir
