@@ -1,0 +1,3 @@
+"D:\CLion\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\2_4PYQ.dir/objects.a
+"D:\CLion\CLion 2022.1.2\bin\mingw\bin\ar.exe" qc CMakeFiles\2_4PYQ.dir/objects.a @CMakeFiles\2_4PYQ.dir\objects1.rsp
+"D:\CLion\CLion 2022.1.2\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\2_4PYQ.dir/objects.a -Wl,--no-whole-archive -o 2_4PYQ.exe -Wl,--out-implib,lib2_4PYQ.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\2_4PYQ.dir\linklibs.rsp
