@@ -1,0 +1,3 @@
+C:/Users/19832/Documents/GitHub/MyOwnProj/StructurehomeWork/test_221123_1/cmake-build-debug/CMakeFiles/test_221123_1.dir
+C:/Users/19832/Documents/GitHub/MyOwnProj/StructurehomeWork/test_221123_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/19832/Documents/GitHub/MyOwnProj/StructurehomeWork/test_221123_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
