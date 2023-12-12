@@ -1,0 +1,3 @@
+C:/Users/19832/Documents/GitHub/MyOwnProj/C++/homework_20220409_stack_copy/cmake-build-debug/CMakeFiles/homework_20220409_stack_copy.dir
+C:/Users/19832/Documents/GitHub/MyOwnProj/C++/homework_20220409_stack_copy/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/19832/Documents/GitHub/MyOwnProj/C++/homework_20220409_stack_copy/cmake-build-debug/CMakeFiles/rebuild_cache.dir

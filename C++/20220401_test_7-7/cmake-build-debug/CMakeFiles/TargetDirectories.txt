@@ -1,3 +1,0 @@
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/20220401_test_7-7/cmake-build-debug/CMakeFiles/20220401_test_7_7.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/20220401_test_7-7/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/20220401_test_7-7/cmake-build-debug/CMakeFiles/rebuild_cache.dir

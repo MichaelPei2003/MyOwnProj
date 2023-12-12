@@ -1,3 +1,0 @@
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/20220415_in_class/cmake-build-debug/CMakeFiles/20220415_in_class.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/20220415_in_class/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/20220415_in_class/cmake-build-debug/CMakeFiles/rebuild_cache.dir

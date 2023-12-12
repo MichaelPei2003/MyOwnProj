@@ -1,0 +1,3 @@
+C:/Users/LuftWasser/Documents/GitHub/MyOwnProjects/C++/PrincipleOfCompilers/FirstCollective/cmake-build-debug/CMakeFiles/FirstCollective.dir
+C:/Users/LuftWasser/Documents/GitHub/MyOwnProjects/C++/PrincipleOfCompilers/FirstCollective/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LuftWasser/Documents/GitHub/MyOwnProjects/C++/PrincipleOfCompilers/FirstCollective/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/template&error/cmake-build-debug/CMakeFiles/template_error.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/template&error/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/19832/Documents/GitHub/MyOwnProj/C++/template&error/cmake-build-debug/CMakeFiles/rebuild_cache.dir

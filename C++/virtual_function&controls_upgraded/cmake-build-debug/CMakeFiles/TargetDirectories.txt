@@ -1,3 +1,0 @@
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/virtual_function&controls_upgraded/cmake-build-debug/CMakeFiles/virtual_function_controls_upgraded.dir
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/virtual_function&controls_upgraded/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Michael/Documents/GitHub/MyOwnProj/C++/virtual_function&controls_upgraded/cmake-build-debug/CMakeFiles/rebuild_cache.dir
