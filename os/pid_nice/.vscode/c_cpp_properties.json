@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Ubuntu 22.04",
+            "includePath": [
+                "/usr/src/linux-headers-6.2.0-36-generic/include/**",
+                "/usr/src/linux-headers-6.2.0-36-generic/arch/x86/include/**",
+                "/usr/src/linux-headers-6.2.0-36-generic/arch/x86/include/generated/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

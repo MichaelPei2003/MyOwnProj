@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+        "module.h": "c",
+        "init.h": "c",
+        "kern_levels.h": "c",
+        "signal.h": "c",
+        "types.h": "c",
+        "posix_types.h": "c",
+        "stddef.h": "c",
+        "build_bug.h": "c",
+        "compiler.h": "c",
+        "list.h": "c",
+        "rwonce.h": "c",
+        "kasan-checks.h": "c",
+        "kobject.h": "c",
+        "sysfs.h": "c",
+        "kernfs.h": "c",
+        "idr.h": "c",
+        "radix-tree.h": "c",
+        "xarray.h": "c",
+        "mm.h": "c",
+        "sched.h": "c",
+        "seccomp.h": "c",
+        "ia32_unistd.h": "c",
+        "unistd_32_ia32.h": "c",
+        "moduleparam.h": "c",
+        "stringify.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc"
+}

@@ -1,0 +1,1 @@
+cmd_/home/pxy/OS/module1/module1.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/pxy/OS/module1/module1.ko /home/pxy/OS/module1/module1.o /home/pxy/OS/module1/module1.mod.o;  true
